@@ -1,0 +1,66 @@
+.control {
+  position: relative;
+  background-color: whitesmoke;
+  width: 200px;
+}
+
+.control::before {
+  position: absolute;
+  content: "0";
+  bottom: 35px;
+  left: 50px;
+  font-size: 12px;
+}
+
+.control::after {
+  position: absolute;
+  content: "500";
+  bottom: 35px;
+  right: 50px;
+  font-size: 12px;
+}
+
+.arrow {
+  transform: translate(99px, 102px) rotate(-180deg);
+}
+
+.center {
+  position: relative;
+}
+
+.center::before {
+  position: absolute;
+  content: "250";
+  font-size: 12px;
+  top: -102px;
+  left: 92px;
+}
+
+.circle {
+  position: absolute;
+  background-color: white;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px 1px rgb(218, 214, 214);
+  bottom: 47px;
+  left: 93px;
+}
+
+.circle::after {
+  content: "375";
+  position: absolute;
+  font-size: 12px;
+  transform:rotate(45deg);
+  top: -40px;
+  left: 40px;
+}
+
+.circle::before {
+  content: "125";
+  position: absolute;
+  font-size: 12px;
+  transform:rotate(-45deg);
+  top: -38px;
+  left: -45px;
+}
